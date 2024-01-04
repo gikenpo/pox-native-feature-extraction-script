@@ -1,0 +1,12 @@
+//for runnning pox controller///
+ sudo ~/pox/pox.py forwarding.switch6 info.packet_dump samples.pretty_log log.level --DEBUG
+
+//for generating tcp normal traffic//
+in one host = iperf -s
+in another host = iperf -c 10.0.0.1
+
+//for generating udp normal traffic//
+in one host = iperf -s -u
+in another host = iperf -c 10.0.0.4 -u
+//for opening cli monitoring system //
+htop
